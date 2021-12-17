@@ -1,7 +1,7 @@
 # About
 This console app was created as a part of test task.
 
-Frameworks used: .NET5
+Framework used: .NET5
 
 ## Installation
 
@@ -14,7 +14,9 @@ dotnet publish --output Release --runtime win-x64 --configuration Release -p:Pub
 You can run .exe form the 'Release' folder.
 
 2. Without .NET5
+3. 
 If you want to run compiled .exe just download the build artifacts and run command (in the root folder):
+
 (example)
 ```bash
 WinProcessMonitor.exe -name notepad -lifetime 1 -frequency 1
