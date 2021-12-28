@@ -17,7 +17,7 @@ namespace WinProcessMonitor
         [Option(shortName: 'f', longName: "frequency", Required = true, HelpText = "Update frequency in minutes. Be careful setting this parameter to 0")]
         public uint UpdateFrequency { get; set; } // uint to prevent negative values
     }
-    class Program
+    public class Program
     {
         private static void Main(string[] args)
         {
@@ -52,7 +52,7 @@ namespace WinProcessMonitor
             Console.BackgroundColor = defaultConsoleBackgroundColor;
         }
 
-        private static void KillProcessByLifetime(string name, int maxLifetime)
+        public static void KillProcessByLifetime(string name, int maxLifetime)
         {
             Process[] processes = Process.GetProcessesByName(name);
             if(processes.Length == 0) return;
